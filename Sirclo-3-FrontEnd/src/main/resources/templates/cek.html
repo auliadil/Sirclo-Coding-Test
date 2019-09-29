@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Cek Iklim</title>
+		<link href="../../static/styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<br>
+		<div class="container">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<h2>Cek Iklim Suatu Kota</h2>
+					</div>
+					<div class="card-body">
+						<form th:action="@{/hasil}" method="GET">
+							<p>Pilih Nama Kota</p>
+							<select  class="form-control" name="idKota" id="idKota">
+						    	<option disabled="disabled" selected="selected">Pilih Kota</option>
+								<option th:value="1642911" th:text="Jakarta" ></option>
+								<option th:value="1880252" th:text="Singapore" ></option>
+								<option th:value="1609350" th:text="Bangkok" ></option>
+						    </select>
+						    <br>
+						    <button type="submit" class="btn btn-primary">Cek</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+/* Style Umum */
+body {
+  background-color: #EAEAEA;
+  font-family: 'Roboto';
+}
+
+.card {
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-bottom: 50px;
+}
+
+/* Style Table */
+.table {
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.table thead {
+    background: #AD974F;
+    color: #FFFFFF;
+}
+
+/* Style Font */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #231F20;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #AD974F;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #231F20;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #231F20;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #231F20;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration:none;
+  color: #AD974F;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration:none;
+}
